@@ -1,12 +1,20 @@
 {
-  "name": "divinity-ui",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "@AveryKing/divinity-ui",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/AveryKing"
   },
-  "author": "",
+  "version": "0.0.2",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "author": "Avery King",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
@@ -16,6 +24,7 @@
     "react": "^17.0.2",
     "rollup": "^2.67.3",
     "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^4.5.5"
   }
 }
